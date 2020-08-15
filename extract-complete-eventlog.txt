@@ -1,0 +1,1 @@
+logparser.exe -i:EVT "SELECT TimeGenerated,EventID,EventType,EventTypeName,EventCategory,EventCategoryName,SourceName,Strings,ComputerName,SID,Message INTO c:\Working\ForwardedEvents-LogParser.csv  FROM ForwardedEvents WHERE TimeGenerated > '2019-01-01 00:00:00' ORDER BY TimeGenerated DESC" -o CSV

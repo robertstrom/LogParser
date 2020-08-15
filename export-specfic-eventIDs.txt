@@ -1,0 +1,2 @@
+## Exporting multiple event ID's (4104 and 4103)
+logparser.exe -i:EVT "SELECT TimeGenerated,EventID,ComputerName,SourceName,EventType,EventTypeName,EventCategory,Strings,SID,Message,Data INTO c:\Working\ForwardedEvents-LogParser.csv  FROM ForwardedEvents WHERE TimeGenerated > '2019-01-01 00:00:00'AND EventID = '4104' OR EventID = '4103'" -o:CSV
